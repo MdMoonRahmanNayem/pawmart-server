@@ -16,5 +16,9 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send("PawMart Server is running...");
+});
+
 
 });
