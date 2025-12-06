@@ -1,6 +1,6 @@
 import Listing from "../models/Listing.model.js";
 
-// ➤ Create Listing
+// Create Listing
 export const addListing = async (req, res) => {
   try {
     const newListing = new Listing(req.body);
@@ -11,7 +11,7 @@ export const addListing = async (req, res) => {
   }
 };
 
-// ➤ Get recent listings (limit optional)
+// Get recent listings (limit optional)
 export const getListings = async (req, res) => {
   try {
     const limit = parseInt(req.query.limit) || 0;
@@ -26,7 +26,7 @@ export const getListings = async (req, res) => {
   }
 };
 
-// ➤ Get by category
+// Get by category
 export const getListingsByCategory = async (req, res) => {
   try {
     const category = req.params.categoryName;
@@ -38,7 +38,7 @@ export const getListingsByCategory = async (req, res) => {
   }
 };
 
-// ➤ Get listing details
+// Get listing details
 export const getListingById = async (req, res) => {
   try {
     const id = req.params.id;
