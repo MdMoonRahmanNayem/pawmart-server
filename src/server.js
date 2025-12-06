@@ -2,12 +2,11 @@ import dotenv from "dotenv";
 import app from "./app.js";
 import connectDB from "./config/db.js";
 import express from "express";  
-import cors from "cors";  // ⬅️ এটা যোগ করা লাগবে
+import cors from "cors";  
 
 dotenv.config();
 connectDB();
 
-// ⬅️ ⬅️ Static uploads folder serve করার কোড
 app.use("/uploads", express.static("public/uploads"));
 
 

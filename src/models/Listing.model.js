@@ -46,7 +46,7 @@ const listingSchema = new mongoose.Schema(
   },
 
   {
-    timestamps: true, // ⭐ VERY IMPORTANT — createdAt & updatedAt automatically যোগ হবে
+    timestamps: true, 
   }
 );
 
