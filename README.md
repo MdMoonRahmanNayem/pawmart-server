@@ -28,7 +28,3 @@ The project is built with the MERN stack and includes authentication, CRUD opera
 **Hosting:** Netlify (client), Vercel (server)
 
 ---
-
-## ⚙️ Environment Variables
-
-### Frontend `.env.local`
